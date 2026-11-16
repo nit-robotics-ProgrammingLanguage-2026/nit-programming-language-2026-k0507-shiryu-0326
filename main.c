@@ -2,12 +2,36 @@
 
 int main(void)
 {
-    double r;
-    scanf("%lf", &r);
+    int input;
+    scanf("%d", &input);
 
-    if (r > 0)
+    if (input >= 101)
     {
-        printf("%.2f", r * r * 22.0);
+        printf("NG");
+    }
+    else if (input >= 90)
+    {
+        printf("AA");
+    }
+    else if (input >= 80)
+    {
+        printf("A");
+    }
+    else if (input >= 70)
+    {
+        printf("B");
+    }
+    else if (input >= 60)
+    {
+        printf("C");
+    }
+    else if (input >= 1)
+    {
+        printf("D");
+    }
+    else if (input == 0)
+    {
+        printf("/");
     }
     else
     {
